@@ -14,6 +14,10 @@
 		B20A6E8220B5C54000D07992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20A6E8020B5C54000D07992 /* LaunchScreen.storyboard */; };
 		B20A6E8520B5C54000D07992 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6E8420B5C54000D07992 /* main.m */; };
 		B20A6E8F20B5C54000D07992 /* GraphBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6E8E20B5C54000D07992 /* GraphBuilderTests.m */; };
+		B20A6EA220B5D01600D07992 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EA120B5D01600D07992 /* Validator.m */; };
+		B20A6EA920B5D10C00D07992 /* FunctionValidationRule.mm in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EA820B5D10C00D07992 /* FunctionValidationRule.mm */; };
+		B20A6EB020B5D67300D07992 /* FunctionValidatorRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EAF20B5D67300D07992 /* FunctionValidatorRuleTests.m */; };
+		B20A6EB220B5D96C00D07992 /* ValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EB120B5D96C00D07992 /* ValidatorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		B20A6E8A20B5C54000D07992 /* GraphBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20A6E8E20B5C54000D07992 /* GraphBuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphBuilderTests.m; sourceTree = "<group>"; };
 		B20A6E9020B5C54000D07992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20A6EA020B5D01600D07992 /* Validator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Validator.h; sourceTree = "<group>"; };
+		B20A6EA120B5D01600D07992 /* Validator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Validator.m; sourceTree = "<group>"; };
+		B20A6EA520B5D09F00D07992 /* ValidationRule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValidationRule.h; sourceTree = "<group>"; };
+		B20A6EA720B5D10C00D07992 /* FunctionValidationRule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionValidationRule.h; sourceTree = "<group>"; };
+		B20A6EA820B5D10C00D07992 /* FunctionValidationRule.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FunctionValidationRule.mm; sourceTree = "<group>"; };
+		B20A6EAF20B5D67300D07992 /* FunctionValidatorRuleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionValidatorRuleTests.m; sourceTree = "<group>"; };
+		B20A6EB120B5D96C00D07992 /* ValidatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +109,7 @@
 		B20A6E8D20B5C54000D07992 /* GraphBuilderTests */ = {
 			isa = PBXGroup;
 			children = (
+				B20A6EAC20B5D63A00D07992 /* Common */,
 				B20A6E8E20B5C54000D07992 /* GraphBuilderTests.m */,
 				B20A6E9020B5C54000D07992 /* Info.plist */,
 			);
@@ -107,6 +119,7 @@
 		B20A6E9A20B5CABB00D07992 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B20A6E9F20B5CFF900D07992 /* Helpers */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -125,6 +138,67 @@
 				B20A6E7620B5C53600D07992 /* AppDelegate.m */,
 			);
 			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		B20A6E9F20B5CFF900D07992 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B20A6EA320B5D05A00D07992 /* Validator */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B20A6EA320B5D05A00D07992 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				B20A6EA420B5D08800D07992 /* Rules */,
+				B20A6EA020B5D01600D07992 /* Validator.h */,
+				B20A6EA120B5D01600D07992 /* Validator.m */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		B20A6EA420B5D08800D07992 /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				B20A6EA620B5D0F200D07992 /* FunctionRule */,
+				B20A6EA520B5D09F00D07992 /* ValidationRule.h */,
+			);
+			path = Rules;
+			sourceTree = "<group>";
+		};
+		B20A6EA620B5D0F200D07992 /* FunctionRule */ = {
+			isa = PBXGroup;
+			children = (
+				B20A6EA720B5D10C00D07992 /* FunctionValidationRule.h */,
+				B20A6EA820B5D10C00D07992 /* FunctionValidationRule.mm */,
+			);
+			path = FunctionRule;
+			sourceTree = "<group>";
+		};
+		B20A6EAC20B5D63A00D07992 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B20A6EAD20B5D64400D07992 /* Helpers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B20A6EAD20B5D64400D07992 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B20A6EAE20B5D64A00D07992 /* Validator */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B20A6EAE20B5D64A00D07992 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				B20A6EAF20B5D67300D07992 /* FunctionValidatorRuleTests.m */,
+				B20A6EB120B5D96C00D07992 /* ValidatorTests.m */,
+			);
+			path = Validator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,9 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20A6EA220B5D01600D07992 /* Validator.m in Sources */,
 				B20A6E7A20B5C53600D07992 /* ViewController.m in Sources */,
 				B20A6E8520B5C54000D07992 /* main.m in Sources */,
 				B20A6E7720B5C53600D07992 /* AppDelegate.m in Sources */,
+				B20A6EA920B5D10C00D07992 /* FunctionValidationRule.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +313,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20A6EB020B5D67300D07992 /* FunctionValidatorRuleTests.m in Sources */,
+				B20A6EB220B5D96C00D07992 /* ValidatorTests.m in Sources */,
 				B20A6E8F20B5C54000D07992 /* GraphBuilderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,7 +465,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R2M678956L;
-				INFOPLIST_FILE = "GraphBuilder/Supporting Files/Info.plist";
+				INFOPLIST_FILE = GraphBuilder/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R2M678956L;
-				INFOPLIST_FILE = "GraphBuilder/Supporting Files/Info.plist";
+				INFOPLIST_FILE = GraphBuilder/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
