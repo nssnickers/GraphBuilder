@@ -18,6 +18,7 @@
 		B20A6EA920B5D10C00D07992 /* FunctionValidationRule.mm in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EA820B5D10C00D07992 /* FunctionValidationRule.mm */; };
 		B20A6EB020B5D67300D07992 /* FunctionValidatorRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EAF20B5D67300D07992 /* FunctionValidatorRuleTests.m */; };
 		B20A6EB220B5D96C00D07992 /* ValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EB120B5D96C00D07992 /* ValidatorTests.m */; };
+		B229154920B5FAB8001D8638 /* GMPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154820B5FAB8001D8638 /* GMPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		B20A6EA820B5D10C00D07992 /* FunctionValidationRule.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FunctionValidationRule.mm; sourceTree = "<group>"; };
 		B20A6EAF20B5D67300D07992 /* FunctionValidatorRuleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionValidatorRuleTests.m; sourceTree = "<group>"; };
 		B20A6EB120B5D96C00D07992 /* ValidatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidatorTests.m; sourceTree = "<group>"; };
+		B229154720B5FAB8001D8638 /* GMPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMPoint.h; sourceTree = "<group>"; };
+		B229154820B5FAB8001D8638 /* GMPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,7 @@
 		B20A6E9A20B5CABB00D07992 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B229154520B5FA81001D8638 /* Models */,
 				B20A6E9F20B5CFF900D07992 /* Helpers */,
 			);
 			path = Common;
@@ -199,6 +203,23 @@
 				B20A6EB120B5D96C00D07992 /* ValidatorTests.m */,
 			);
 			path = Validator;
+			sourceTree = "<group>";
+		};
+		B229154520B5FA81001D8638 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B229154620B5FAA0001D8638 /* Point */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B229154620B5FAA0001D8638 /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				B229154720B5FAB8001D8638 /* GMPoint.h */,
+				B229154820B5FAB8001D8638 /* GMPoint.m */,
+			);
+			path = Point;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +324,7 @@
 			files = (
 				B20A6EA220B5D01600D07992 /* Validator.m in Sources */,
 				B20A6E7A20B5C53600D07992 /* ViewController.m in Sources */,
+				B229154920B5FAB8001D8638 /* GMPoint.m in Sources */,
 				B20A6E8520B5C54000D07992 /* main.m in Sources */,
 				B20A6E7720B5C53600D07992 /* AppDelegate.m in Sources */,
 				B20A6EA920B5D10C00D07992 /* FunctionValidationRule.mm in Sources */,
