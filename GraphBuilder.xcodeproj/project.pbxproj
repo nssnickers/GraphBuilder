@@ -19,6 +19,9 @@
 		B20A6EB020B5D67300D07992 /* FunctionValidatorRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EAF20B5D67300D07992 /* FunctionValidatorRuleTests.m */; };
 		B20A6EB220B5D96C00D07992 /* ValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EB120B5D96C00D07992 /* ValidatorTests.m */; };
 		B229154920B5FAB8001D8638 /* GMPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154820B5FAB8001D8638 /* GMPoint.m */; };
+		B229154C20B5FB13001D8638 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154B20B5FB13001D8638 /* Graph.m */; };
+		B229155020B5FB56001D8638 /* GMInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154F20B5FB56001D8638 /* GMInterval.m */; };
+		B229155520B5FC3A001D8638 /* UIBezierPath+GMPoints.m in Sources */ = {isa = PBXBuildFile; fileRef = B229155420B5FC3A001D8638 /* UIBezierPath+GMPoints.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		B20A6EB120B5D96C00D07992 /* ValidatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidatorTests.m; sourceTree = "<group>"; };
 		B229154720B5FAB8001D8638 /* GMPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMPoint.h; sourceTree = "<group>"; };
 		B229154820B5FAB8001D8638 /* GMPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMPoint.m; sourceTree = "<group>"; };
+		B229154A20B5FB13001D8638 /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
+		B229154B20B5FB13001D8638 /* Graph.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Graph.m; sourceTree = "<group>"; };
+		B229154E20B5FB56001D8638 /* GMInterval.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMInterval.h; sourceTree = "<group>"; };
+		B229154F20B5FB56001D8638 /* GMInterval.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMInterval.m; sourceTree = "<group>"; };
+		B229155320B5FC3A001D8638 /* UIBezierPath+GMPoints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+GMPoints.h"; sourceTree = "<group>"; };
+		B229155420B5FC3A001D8638 /* UIBezierPath+GMPoints.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+GMPoints.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +131,7 @@
 		B20A6E9A20B5CABB00D07992 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B229155220B5FBFE001D8638 /* Extensions */,
 				B229154520B5FA81001D8638 /* Models */,
 				B20A6E9F20B5CFF900D07992 /* Helpers */,
 			);
@@ -209,6 +219,8 @@
 			isa = PBXGroup;
 			children = (
 				B229154620B5FAA0001D8638 /* Point */,
+				B229154D20B5FB18001D8638 /* Graph */,
+				B229155120B5FB5C001D8638 /* Interval */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -220,6 +232,41 @@
 				B229154820B5FAB8001D8638 /* GMPoint.m */,
 			);
 			path = Point;
+			sourceTree = "<group>";
+		};
+		B229154D20B5FB18001D8638 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				B229154A20B5FB13001D8638 /* Graph.h */,
+				B229154B20B5FB13001D8638 /* Graph.m */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		B229155120B5FB5C001D8638 /* Interval */ = {
+			isa = PBXGroup;
+			children = (
+				B229154E20B5FB56001D8638 /* GMInterval.h */,
+				B229154F20B5FB56001D8638 /* GMInterval.m */,
+			);
+			path = Interval;
+			sourceTree = "<group>";
+		};
+		B229155220B5FBFE001D8638 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B229155620B5FC3F001D8638 /* UIBezierPath+Points */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B229155620B5FC3F001D8638 /* UIBezierPath+Points */ = {
+			isa = PBXGroup;
+			children = (
+				B229155320B5FC3A001D8638 /* UIBezierPath+GMPoints.h */,
+				B229155420B5FC3A001D8638 /* UIBezierPath+GMPoints.m */,
+			);
+			path = "UIBezierPath+Points";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,11 +369,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B229155020B5FB56001D8638 /* GMInterval.m in Sources */,
 				B20A6EA220B5D01600D07992 /* Validator.m in Sources */,
+				B229155520B5FC3A001D8638 /* UIBezierPath+GMPoints.m in Sources */,
 				B20A6E7A20B5C53600D07992 /* ViewController.m in Sources */,
 				B229154920B5FAB8001D8638 /* GMPoint.m in Sources */,
 				B20A6E8520B5C54000D07992 /* main.m in Sources */,
 				B20A6E7720B5C53600D07992 /* AppDelegate.m in Sources */,
+				B229154C20B5FB13001D8638 /* Graph.m in Sources */,
 				B20A6EA920B5D10C00D07992 /* FunctionValidationRule.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

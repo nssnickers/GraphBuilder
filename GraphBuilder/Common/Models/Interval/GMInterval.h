@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 @interface GMInterval : NSObject
 
+@property (assign, nonatomic) CGFloat max;
+@property (assign, nonatomic) CGFloat min;
+
+- (instancetype)initWithMin:(CGFloat)min max:(CGFloat)max NS_DESIGNATED_INITIALIZER;
+
 @end
+

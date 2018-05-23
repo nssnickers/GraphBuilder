@@ -10,4 +10,18 @@
 
 @implementation GMInterval
 
+- (instancetype)init {
+    return [self initWithMin:NAN max:NAN];
+}
+
+- (instancetype)initWithMin:(CGFloat)min max:(CGFloat)max {
+    self = [super init];
+    if (self) {
+        _min = min < max ? min : max;
+        _max = max > min ? max : min;
+    }
+    
+    return self;
+}
+
 @end
