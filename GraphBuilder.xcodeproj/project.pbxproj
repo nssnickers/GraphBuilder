@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		363D206076BA21AD86BB2343 /* libPods-GraphBuilderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABBEE2098BA6ACE6379EC98E /* libPods-GraphBuilderTests.a */; };
 		B20A6E7720B5C53600D07992 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6E7620B5C53600D07992 /* AppDelegate.m */; };
-		B20A6E7A20B5C53600D07992 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6E7920B5C53600D07992 /* ViewController.m */; };
-		B20A6E7D20B5C53600D07992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20A6E7B20B5C53600D07992 /* Main.storyboard */; };
+		B20A6E7D20B5C53600D07992 /* Graph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20A6E7B20B5C53600D07992 /* Graph.storyboard */; };
 		B20A6E7F20B5C54000D07992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20A6E7E20B5C54000D07992 /* Assets.xcassets */; };
 		B20A6E8220B5C54000D07992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20A6E8020B5C54000D07992 /* LaunchScreen.storyboard */; };
 		B20A6E8520B5C54000D07992 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6E8420B5C54000D07992 /* main.m */; };
-		B20A6E8F20B5C54000D07992 /* GraphBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6E8E20B5C54000D07992 /* GraphBuilderTests.m */; };
 		B20A6EA220B5D01600D07992 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EA120B5D01600D07992 /* Validator.m */; };
 		B20A6EA920B5D10C00D07992 /* FunctionValidationRule.mm in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EA820B5D10C00D07992 /* FunctionValidationRule.mm */; };
 		B20A6EB020B5D67300D07992 /* FunctionValidatorRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EAF20B5D67300D07992 /* FunctionValidatorRuleTests.m */; };
 		B20A6EB220B5D96C00D07992 /* ValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EB120B5D96C00D07992 /* ValidatorTests.m */; };
+		B20F3EEC20B6BEAF00C3D486 /* GraphInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F3EEB20B6BEAF00C3D486 /* GraphInteractorTests.m */; };
+		B20F3EEE20B6C55100C3D486 /* GraphPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F3EED20B6C55100C3D486 /* GraphPresenterTests.m */; };
+		B20F3EF020B6DB5800C3D486 /* GraphViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F3EEF20B6DB5800C3D486 /* GraphViewControllerTests.m */; };
 		B229154920B5FAB8001D8638 /* GMPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154820B5FAB8001D8638 /* GMPoint.m */; };
 		B229154C20B5FB13001D8638 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154B20B5FB13001D8638 /* Graph.m */; };
 		B229155020B5FB56001D8638 /* GMInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154F20B5FB56001D8638 /* GMInterval.m */; };
@@ -37,6 +39,11 @@
 		B247861720B68108004F6C9E /* XLegendRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B247861620B68108004F6C9E /* XLegendRenderer.m */; };
 		B247861B20B68122004F6C9E /* YLegendRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B247861A20B68122004F6C9E /* YLegendRenderer.m */; };
 		B247862020B68D80004F6C9E /* TestGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = B247861F20B68D80004F6C9E /* TestGraph.m */; };
+		B247862C20B69514004F6C9E /* GraphConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = B247862B20B69514004F6C9E /* GraphConfigurator.m */; };
+		B247863220B695DB004F6C9E /* GraphInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = B247863120B695DB004F6C9E /* GraphInteractor.m */; };
+		B247863520B6961A004F6C9E /* GraphPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B247863420B6961A004F6C9E /* GraphPresenter.m */; };
+		B247863920B69650004F6C9E /* GraphData.m in Sources */ = {isa = PBXBuildFile; fileRef = B247863820B69650004F6C9E /* GraphData.m */; };
+		B247863C20B69695004F6C9E /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B247863B20B69695004F6C9E /* GraphViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,18 +57,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ABBEE2098BA6ACE6379EC98E /* libPods-GraphBuilderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GraphBuilderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE5FDD75B928D85FDD72E68 /* Pods-GraphBuilderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphBuilderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GraphBuilderTests/Pods-GraphBuilderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B20A6E7220B5C53600D07992 /* GraphBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20A6E7520B5C53600D07992 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B20A6E7620B5C53600D07992 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B20A6E7820B5C53600D07992 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B20A6E7920B5C53600D07992 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B20A6E7C20B5C53600D07992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B20A6E7C20B5C53600D07992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Graph.storyboard; sourceTree = "<group>"; };
 		B20A6E7E20B5C54000D07992 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B20A6E8120B5C54000D07992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B20A6E8320B5C54000D07992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B20A6E8420B5C54000D07992 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B20A6E8A20B5C54000D07992 /* GraphBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B20A6E8E20B5C54000D07992 /* GraphBuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphBuilderTests.m; sourceTree = "<group>"; };
 		B20A6E9020B5C54000D07992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B20A6EA020B5D01600D07992 /* Validator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Validator.h; sourceTree = "<group>"; };
 		B20A6EA120B5D01600D07992 /* Validator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Validator.m; sourceTree = "<group>"; };
@@ -70,6 +76,10 @@
 		B20A6EA820B5D10C00D07992 /* FunctionValidationRule.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FunctionValidationRule.mm; sourceTree = "<group>"; };
 		B20A6EAF20B5D67300D07992 /* FunctionValidatorRuleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionValidatorRuleTests.m; sourceTree = "<group>"; };
 		B20A6EB120B5D96C00D07992 /* ValidatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidatorTests.m; sourceTree = "<group>"; };
+		B20F3EEB20B6BEAF00C3D486 /* GraphInteractorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphInteractorTests.m; sourceTree = "<group>"; };
+		B20F3EED20B6C55100C3D486 /* GraphPresenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphPresenterTests.m; sourceTree = "<group>"; };
+		B20F3EEF20B6DB5800C3D486 /* GraphViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphViewControllerTests.m; sourceTree = "<group>"; };
+		B20F3EF120B6E12300C3D486 /* GraphViewController+testable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GraphViewController+testable.h"; sourceTree = "<group>"; };
 		B229154720B5FAB8001D8638 /* GMPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMPoint.h; sourceTree = "<group>"; };
 		B229154820B5FAB8001D8638 /* GMPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMPoint.m; sourceTree = "<group>"; };
 		B229154A20B5FB13001D8638 /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
@@ -109,6 +119,21 @@
 		B247861920B68122004F6C9E /* YLegendRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLegendRenderer.h; sourceTree = "<group>"; };
 		B247861A20B68122004F6C9E /* YLegendRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLegendRenderer.m; sourceTree = "<group>"; };
 		B247861F20B68D80004F6C9E /* TestGraph.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGraph.m; sourceTree = "<group>"; };
+		B247862920B694FA004F6C9E /* GraphConfiguratorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphConfiguratorProtocol.h; sourceTree = "<group>"; };
+		B247862A20B69514004F6C9E /* GraphConfigurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphConfigurator.h; sourceTree = "<group>"; };
+		B247862B20B69514004F6C9E /* GraphConfigurator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphConfigurator.m; sourceTree = "<group>"; };
+		B247862D20B69525004F6C9E /* GraphViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphViewProtocol.h; sourceTree = "<group>"; };
+		B247862E20B69537004F6C9E /* GraphPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphPresenterProtocol.h; sourceTree = "<group>"; };
+		B247862F20B6954C004F6C9E /* GraphInteractorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphInteractorProtocol.h; sourceTree = "<group>"; };
+		B247863020B695DB004F6C9E /* GraphInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphInteractor.h; sourceTree = "<group>"; };
+		B247863120B695DB004F6C9E /* GraphInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphInteractor.m; sourceTree = "<group>"; };
+		B247863320B6961A004F6C9E /* GraphPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphPresenter.h; sourceTree = "<group>"; };
+		B247863420B6961A004F6C9E /* GraphPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphPresenter.m; sourceTree = "<group>"; };
+		B247863720B69650004F6C9E /* GraphData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphData.h; sourceTree = "<group>"; };
+		B247863820B69650004F6C9E /* GraphData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphData.m; sourceTree = "<group>"; };
+		B247863A20B69695004F6C9E /* GraphViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphViewController.h; sourceTree = "<group>"; };
+		B247863B20B69695004F6C9E /* GraphViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphViewController.m; sourceTree = "<group>"; };
+		C71EAC2F34EC0608DF83787B /* Pods-GraphBuilderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphBuilderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GraphBuilderTests/Pods-GraphBuilderTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,18 +148,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				363D206076BA21AD86BB2343 /* libPods-GraphBuilderTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FDB23A5FE4814E0DDA531A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABBEE2098BA6ACE6379EC98E /* libPods-GraphBuilderTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A71051007BBD84B6DD42332B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADE5FDD75B928D85FDD72E68 /* Pods-GraphBuilderTests.debug.xcconfig */,
+				C71EAC2F34EC0608DF83787B /* Pods-GraphBuilderTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B20A6E6920B5C53600D07992 = {
 			isa = PBXGroup;
 			children = (
 				B20A6E7420B5C53600D07992 /* GraphBuilder */,
 				B20A6E8D20B5C54000D07992 /* GraphBuilderTests */,
 				B20A6E7320B5C53600D07992 /* Products */,
+				A71051007BBD84B6DD42332B /* Pods */,
+				5FDB23A5FE4814E0DDA531A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,9 +198,6 @@
 				B20A6E9B20B5CAC500D07992 /* UserStories */,
 				B20A6E9A20B5CABB00D07992 /* Common */,
 				B20A6E9C20B5CAE200D07992 /* App Delegate */,
-				B20A6E7820B5C53600D07992 /* ViewController.h */,
-				B20A6E7920B5C53600D07992 /* ViewController.m */,
-				B20A6E7B20B5C53600D07992 /* Main.storyboard */,
 				B20A6E7E20B5C54000D07992 /* Assets.xcassets */,
 				B20A6E8020B5C54000D07992 /* LaunchScreen.storyboard */,
 				B20A6E8420B5C54000D07992 /* main.m */,
@@ -167,8 +209,8 @@
 		B20A6E8D20B5C54000D07992 /* GraphBuilderTests */ = {
 			isa = PBXGroup;
 			children = (
+				B20F3EE820B6BE4800C3D486 /* UserStories */,
 				B20A6EAC20B5D63A00D07992 /* Common */,
-				B20A6E8E20B5C54000D07992 /* GraphBuilderTests.m */,
 				B20A6E9020B5C54000D07992 /* Info.plist */,
 			);
 			path = GraphBuilderTests;
@@ -188,6 +230,7 @@
 		B20A6E9B20B5CAC500D07992 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
+				B247862120B69362004F6C9E /* GraphBuilderUserStory */,
 			);
 			path = UserStories;
 			sourceTree = "<group>";
@@ -261,6 +304,33 @@
 				B20A6EB120B5D96C00D07992 /* ValidatorTests.m */,
 			);
 			path = Validator;
+			sourceTree = "<group>";
+		};
+		B20F3EE820B6BE4800C3D486 /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				B20F3EE920B6BE5800C3D486 /* GraphBuilderUserStory */,
+			);
+			path = UserStories;
+			sourceTree = "<group>";
+		};
+		B20F3EE920B6BE5800C3D486 /* GraphBuilderUserStory */ = {
+			isa = PBXGroup;
+			children = (
+				B20F3EEA20B6BE6C00C3D486 /* GraphBuilderModule */,
+			);
+			path = GraphBuilderUserStory;
+			sourceTree = "<group>";
+		};
+		B20F3EEA20B6BE6C00C3D486 /* GraphBuilderModule */ = {
+			isa = PBXGroup;
+			children = (
+				B20F3EEB20B6BEAF00C3D486 /* GraphInteractorTests.m */,
+				B20F3EED20B6C55100C3D486 /* GraphPresenterTests.m */,
+				B20F3EEF20B6DB5800C3D486 /* GraphViewControllerTests.m */,
+				B20F3EF120B6E12300C3D486 /* GraphViewController+testable.h */,
+			);
+			path = GraphBuilderModule;
 			sourceTree = "<group>";
 		};
 		B229154520B5FA81001D8638 /* Models */ = {
@@ -498,6 +568,92 @@
 			path = Graph;
 			sourceTree = "<group>";
 		};
+		B247862120B69362004F6C9E /* GraphBuilderUserStory */ = {
+			isa = PBXGroup;
+			children = (
+				B247862320B6937E004F6C9E /* Modules */,
+				B247862220B69373004F6C9E /* StoryBoard */,
+			);
+			path = GraphBuilderUserStory;
+			sourceTree = "<group>";
+		};
+		B247862220B69373004F6C9E /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				B20A6E7B20B5C53600D07992 /* Graph.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		B247862320B6937E004F6C9E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B247862420B693C6004F6C9E /* GraphBuilderModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B247862420B693C6004F6C9E /* GraphBuilderModule */ = {
+			isa = PBXGroup;
+			children = (
+				B247862820B6949B004F6C9E /* View */,
+				B247862720B6948C004F6C9E /* Presenter */,
+				B247862620B69483004F6C9E /* Interactor */,
+				B247862520B6947A004F6C9E /* Configurator */,
+			);
+			path = GraphBuilderModule;
+			sourceTree = "<group>";
+		};
+		B247862520B6947A004F6C9E /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				B247862920B694FA004F6C9E /* GraphConfiguratorProtocol.h */,
+				B247862A20B69514004F6C9E /* GraphConfigurator.h */,
+				B247862B20B69514004F6C9E /* GraphConfigurator.m */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		B247862620B69483004F6C9E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B247862F20B6954C004F6C9E /* GraphInteractorProtocol.h */,
+				B247863020B695DB004F6C9E /* GraphInteractor.h */,
+				B247863120B695DB004F6C9E /* GraphInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B247862720B6948C004F6C9E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B247863620B6963E004F6C9E /* GraphDataSource */,
+				B247862E20B69537004F6C9E /* GraphPresenterProtocol.h */,
+				B247863320B6961A004F6C9E /* GraphPresenter.h */,
+				B247863420B6961A004F6C9E /* GraphPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B247862820B6949B004F6C9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B247862D20B69525004F6C9E /* GraphViewProtocol.h */,
+				B247863A20B69695004F6C9E /* GraphViewController.h */,
+				B247863B20B69695004F6C9E /* GraphViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B247863620B6963E004F6C9E /* GraphDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				B247863720B69650004F6C9E /* GraphData.h */,
+				B247863820B69650004F6C9E /* GraphData.m */,
+			);
+			path = GraphDataSource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -522,6 +678,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B20A6E9620B5C54000D07992 /* Build configuration list for PBXNativeTarget "GraphBuilderTests" */;
 			buildPhases = (
+				F822815C9A0C82E9393EC311 /* [CP] Check Pods Manifest.lock */,
 				B20A6E8620B5C54000D07992 /* Sources */,
 				B20A6E8720B5C54000D07992 /* Frameworks */,
 				B20A6E8820B5C54000D07992 /* Resources */,
@@ -580,7 +737,7 @@
 			files = (
 				B20A6E8220B5C54000D07992 /* LaunchScreen.storyboard in Resources */,
 				B20A6E7F20B5C54000D07992 /* Assets.xcassets in Resources */,
-				B20A6E7D20B5C53600D07992 /* Main.storyboard in Resources */,
+				B20A6E7D20B5C53600D07992 /* Graph.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +750,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F822815C9A0C82E9393EC311 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GraphBuilderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B20A6E6E20B5C53600D07992 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -601,12 +779,12 @@
 				B247860320B67E81004F6C9E /* YAxisRenderer.m in Sources */,
 				B229155020B5FB56001D8638 /* GMInterval.m in Sources */,
 				B229155C20B5FD90001D8638 /* GraphView.m in Sources */,
+				B247863920B69650004F6C9E /* GraphData.m in Sources */,
 				B20A6EA220B5D01600D07992 /* Validator.m in Sources */,
 				B24785FD20B67BB0004F6C9E /* YAxis.m in Sources */,
 				B247860B20B68006004F6C9E /* Line.m in Sources */,
 				B24785F920B67ADA004F6C9E /* AxisBase.m in Sources */,
 				B229155520B5FC3A001D8638 /* UIBezierPath+GMPoints.m in Sources */,
-				B20A6E7A20B5C53600D07992 /* ViewController.m in Sources */,
 				B247861420B680C2004F6C9E /* Legend.m in Sources */,
 				B229154920B5FAB8001D8638 /* GMPoint.m in Sources */,
 				B229156920B6025A001D8638 /* Grid.m in Sources */,
@@ -614,9 +792,13 @@
 				B20A6E8520B5C54000D07992 /* main.m in Sources */,
 				B247861720B68108004F6C9E /* XLegendRenderer.m in Sources */,
 				B20A6E7720B5C53600D07992 /* AppDelegate.m in Sources */,
+				B247863C20B69695004F6C9E /* GraphViewController.m in Sources */,
 				B229156C20B602BA001D8638 /* GridRenderer.m in Sources */,
 				B24785F120B6784F004F6C9E /* GraphViewPort.m in Sources */,
 				B247860F20B68055004F6C9E /* LineRenderer.m in Sources */,
+				B247863520B6961A004F6C9E /* GraphPresenter.m in Sources */,
+				B247862C20B69514004F6C9E /* GraphConfigurator.m in Sources */,
+				B247863220B695DB004F6C9E /* GraphInteractor.m in Sources */,
 				B247861B20B68122004F6C9E /* YLegendRenderer.m in Sources */,
 				B229154C20B5FB13001D8638 /* Graph.m in Sources */,
 				B20A6EA920B5D10C00D07992 /* FunctionValidationRule.mm in Sources */,
@@ -629,9 +811,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B247862020B68D80004F6C9E /* TestGraph.m in Sources */,
+				B20F3EF020B6DB5800C3D486 /* GraphViewControllerTests.m in Sources */,
+				B20F3EEC20B6BEAF00C3D486 /* GraphInteractorTests.m in Sources */,
 				B20A6EB020B5D67300D07992 /* FunctionValidatorRuleTests.m in Sources */,
+				B20F3EEE20B6C55100C3D486 /* GraphPresenterTests.m in Sources */,
 				B20A6EB220B5D96C00D07992 /* ValidatorTests.m in Sources */,
-				B20A6E8F20B5C54000D07992 /* GraphBuilderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,12 +830,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B20A6E7B20B5C53600D07992 /* Main.storyboard */ = {
+		B20A6E7B20B5C53600D07992 /* Graph.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B20A6E7C20B5C53600D07992 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Graph.storyboard;
 			sourceTree = "<group>";
 		};
 		B20A6E8020B5C54000D07992 /* LaunchScreen.storyboard */ = {
@@ -811,6 +995,7 @@
 		};
 		B20A6E9720B5C54000D07992 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE5FDD75B928D85FDD72E68 /* Pods-GraphBuilderTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -830,6 +1015,7 @@
 		};
 		B20A6E9820B5C54000D07992 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C71EAC2F34EC0608DF83787B /* Pods-GraphBuilderTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
