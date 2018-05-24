@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DFt-NP-Nis">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Graph View Controller-->
+        <scene sceneID="ita-hd-6z3">
+            <objects>
+                <viewController id="DFt-NP-Nis" customClass="GraphViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sLd-50-fdk">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="x * (x + 3)" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="st9-0l-s5n">
+                                <rect key="frame" x="66" y="16" width="491" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" adjustable="YES"/>
+                                </accessibility>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPq-wD-Cuw">
+                                <rect key="frame" x="565" y="14.5" width="86" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="Построить"/>
+                                <connections>
+                                    <action selector="didTapBuildButton:" destination="DFt-NP-Nis" eventType="touchUpInside" id="ZMA-Sd-aOv"/>
+                                </connections>
+                            </button>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="qal-ee-1hh" customClass="GraphView">
+                                <rect key="frame" x="16" y="54" width="635" height="305"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="f(x) =" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glS-LC-r4W">
+                                <rect key="frame" x="16" y="21.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qal-ee-1hh" firstAttribute="top" secondItem="st9-0l-s5n" secondAttribute="bottom" constant="8" symbolic="YES" id="Acz-Ss-rOM"/>
+                            <constraint firstItem="wPq-wD-Cuw" firstAttribute="leading" secondItem="st9-0l-s5n" secondAttribute="trailing" constant="8" symbolic="YES" id="GG5-g9-Nlh"/>
+                            <constraint firstItem="glS-LC-r4W" firstAttribute="centerY" secondItem="st9-0l-s5n" secondAttribute="centerY" id="IDe-mS-aIe"/>
+                            <constraint firstItem="st9-0l-s5n" firstAttribute="top" secondItem="bGk-KG-O7A" secondAttribute="top" constant="16" id="K3t-tx-Tb9"/>
+                            <constraint firstItem="bGk-KG-O7A" firstAttribute="trailing" secondItem="wPq-wD-Cuw" secondAttribute="trailing" constant="16" id="WDf-eJ-JlG"/>
+                            <constraint firstItem="glS-LC-r4W" firstAttribute="leading" secondItem="bGk-KG-O7A" secondAttribute="leading" constant="16" id="bi5-iG-KtP"/>
+                            <constraint firstItem="bGk-KG-O7A" firstAttribute="trailing" secondItem="qal-ee-1hh" secondAttribute="trailing" constant="16" id="g3G-Wr-Zrw"/>
+                            <constraint firstItem="st9-0l-s5n" firstAttribute="leading" secondItem="glS-LC-r4W" secondAttribute="trailing" constant="8" symbolic="YES" id="r5Z-Uv-r4z"/>
+                            <constraint firstItem="qal-ee-1hh" firstAttribute="leading" secondItem="bGk-KG-O7A" secondAttribute="leading" constant="16" id="tJB-jL-Wbb"/>
+                            <constraint firstItem="st9-0l-s5n" firstAttribute="centerY" secondItem="wPq-wD-Cuw" secondAttribute="centerY" id="tTd-nh-7yw"/>
+                            <constraint firstItem="bGk-KG-O7A" firstAttribute="bottom" secondItem="qal-ee-1hh" secondAttribute="bottom" constant="16" id="tpZ-lG-sL4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bGk-KG-O7A"/>
+                    </view>
+                    <connections>
+                        <outlet property="functionText" destination="st9-0l-s5n" id="Ra6-pl-oqs"/>
+                        <outlet property="graphView" destination="qal-ee-1hh" id="2CP-gC-Nqn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cjp-vJ-U35" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695" y="186"/>
+        </scene>
+    </scenes>
+</document>
