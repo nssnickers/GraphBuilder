@@ -61,9 +61,20 @@
     XCTAssertFalse(result);
 }
 
-- (void)testItNotValidWhenStringContainNotBalancedBrackets {
+- (void)testItNotValidWhenStringContainNotBalancedParenthesis {
     //given
     NSString *stringForValidate = @"x*(x+4) - (x*6)))";
+    
+    //when
+    BOOL result = [self.rule validate:stringForValidate];
+    
+    //then
+    XCTAssertFalse(result);
+}
+
+- (void)testItNotValidWhenStringContainNotBalancedOpenParenthesis {
+    //given
+    NSString *stringForValidate = @"x*((((x+4) - (x*6)";
     
     //when
     BOOL result = [self.rule validate:stringForValidate];
