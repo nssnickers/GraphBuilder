@@ -36,6 +36,7 @@
 		B247861420B680C2004F6C9E /* Legend.m in Sources */ = {isa = PBXBuildFile; fileRef = B247861320B680C2004F6C9E /* Legend.m */; };
 		B247861720B68108004F6C9E /* XLegendRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B247861620B68108004F6C9E /* XLegendRenderer.m */; };
 		B247861B20B68122004F6C9E /* YLegendRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B247861A20B68122004F6C9E /* YLegendRenderer.m */; };
+		B247862020B68D80004F6C9E /* TestGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = B247861F20B68D80004F6C9E /* TestGraph.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		B247861620B68108004F6C9E /* XLegendRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLegendRenderer.m; sourceTree = "<group>"; };
 		B247861920B68122004F6C9E /* YLegendRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLegendRenderer.h; sourceTree = "<group>"; };
 		B247861A20B68122004F6C9E /* YLegendRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLegendRenderer.m; sourceTree = "<group>"; };
+		B247861F20B68D80004F6C9E /* TestGraph.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGraph.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 		B20A6EAC20B5D63A00D07992 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B247861D20B68BE2004F6C9E /* Models */,
 				B20A6EAD20B5D64400D07992 /* Helpers */,
 			);
 			path = Common;
@@ -479,6 +482,22 @@
 			path = YLegendRenderer;
 			sourceTree = "<group>";
 		};
+		B247861D20B68BE2004F6C9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B247861E20B68BFB004F6C9E /* Graph */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B247861E20B68BFB004F6C9E /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				B247861F20B68D80004F6C9E /* TestGraph.m */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -609,6 +628,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B247862020B68D80004F6C9E /* TestGraph.m in Sources */,
 				B20A6EB020B5D67300D07992 /* FunctionValidatorRuleTests.m in Sources */,
 				B20A6EB220B5D96C00D07992 /* ValidatorTests.m in Sources */,
 				B20A6E8F20B5C54000D07992 /* GraphBuilderTests.m in Sources */,
