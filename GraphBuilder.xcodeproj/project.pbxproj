@@ -22,6 +22,20 @@
 		B229154C20B5FB13001D8638 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154B20B5FB13001D8638 /* Graph.m */; };
 		B229155020B5FB56001D8638 /* GMInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154F20B5FB56001D8638 /* GMInterval.m */; };
 		B229155520B5FC3A001D8638 /* UIBezierPath+GMPoints.m in Sources */ = {isa = PBXBuildFile; fileRef = B229155420B5FC3A001D8638 /* UIBezierPath+GMPoints.m */; };
+		B229155C20B5FD90001D8638 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = B229155B20B5FD90001D8638 /* GraphView.m */; };
+		B229156920B6025A001D8638 /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = B229156820B6025A001D8638 /* Grid.m */; };
+		B229156C20B602BA001D8638 /* GridRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B229156B20B602BA001D8638 /* GridRenderer.m */; };
+		B24785F120B6784F004F6C9E /* GraphViewPort.m in Sources */ = {isa = PBXBuildFile; fileRef = B24785F020B6784F004F6C9E /* GraphViewPort.m */; };
+		B24785F920B67ADA004F6C9E /* AxisBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B24785F820B67ADA004F6C9E /* AxisBase.m */; };
+		B24785FD20B67BB0004F6C9E /* YAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = B24785FC20B67BB0004F6C9E /* YAxis.m */; };
+		B247860020B67C6F004F6C9E /* XAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = B24785FF20B67C6F004F6C9E /* XAxis.m */; };
+		B247860320B67E81004F6C9E /* YAxisRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B247860220B67E81004F6C9E /* YAxisRenderer.m */; };
+		B247860720B67F51004F6C9E /* XAxisRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B247860620B67F51004F6C9E /* XAxisRenderer.m */; };
+		B247860B20B68006004F6C9E /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = B247860A20B68006004F6C9E /* Line.m */; };
+		B247860F20B68055004F6C9E /* LineRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B247860E20B68055004F6C9E /* LineRenderer.m */; };
+		B247861420B680C2004F6C9E /* Legend.m in Sources */ = {isa = PBXBuildFile; fileRef = B247861320B680C2004F6C9E /* Legend.m */; };
+		B247861720B68108004F6C9E /* XLegendRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B247861620B68108004F6C9E /* XLegendRenderer.m */; };
+		B247861B20B68122004F6C9E /* YLegendRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B247861A20B68122004F6C9E /* YLegendRenderer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +77,36 @@
 		B229154F20B5FB56001D8638 /* GMInterval.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMInterval.m; sourceTree = "<group>"; };
 		B229155320B5FC3A001D8638 /* UIBezierPath+GMPoints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+GMPoints.h"; sourceTree = "<group>"; };
 		B229155420B5FC3A001D8638 /* UIBezierPath+GMPoints.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+GMPoints.m"; sourceTree = "<group>"; };
+		B229155920B5FD56001D8638 /* GraphViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphViewDataSource.h; sourceTree = "<group>"; };
+		B229155A20B5FD90001D8638 /* GraphView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		B229155B20B5FD90001D8638 /* GraphView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
+		B229156720B6025A001D8638 /* Grid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
+		B229156820B6025A001D8638 /* Grid.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Grid.m; sourceTree = "<group>"; };
+		B229156A20B602BA001D8638 /* GridRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridRenderer.h; sourceTree = "<group>"; };
+		B229156B20B602BA001D8638 /* GridRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridRenderer.m; sourceTree = "<group>"; };
+		B24785EF20B6784F004F6C9E /* GraphViewPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphViewPort.h; sourceTree = "<group>"; };
+		B24785F020B6784F004F6C9E /* GraphViewPort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphViewPort.m; sourceTree = "<group>"; };
+		B24785F520B6796E004F6C9E /* GraphComponentsRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphComponentsRenderer.h; sourceTree = "<group>"; };
+		B24785F720B67ADA004F6C9E /* AxisBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxisBase.h; sourceTree = "<group>"; };
+		B24785F820B67ADA004F6C9E /* AxisBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxisBase.m; sourceTree = "<group>"; };
+		B24785FB20B67BB0004F6C9E /* YAxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAxis.h; sourceTree = "<group>"; };
+		B24785FC20B67BB0004F6C9E /* YAxis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAxis.m; sourceTree = "<group>"; };
+		B24785FE20B67C6F004F6C9E /* XAxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAxis.h; sourceTree = "<group>"; };
+		B24785FF20B67C6F004F6C9E /* XAxis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAxis.m; sourceTree = "<group>"; };
+		B247860120B67E81004F6C9E /* YAxisRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAxisRenderer.h; sourceTree = "<group>"; };
+		B247860220B67E81004F6C9E /* YAxisRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAxisRenderer.m; sourceTree = "<group>"; };
+		B247860520B67F51004F6C9E /* XAxisRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAxisRenderer.h; sourceTree = "<group>"; };
+		B247860620B67F51004F6C9E /* XAxisRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAxisRenderer.m; sourceTree = "<group>"; };
+		B247860920B68006004F6C9E /* Line.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		B247860A20B68006004F6C9E /* Line.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		B247860D20B68055004F6C9E /* LineRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineRenderer.h; sourceTree = "<group>"; };
+		B247860E20B68055004F6C9E /* LineRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineRenderer.m; sourceTree = "<group>"; };
+		B247861220B680C2004F6C9E /* Legend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Legend.h; sourceTree = "<group>"; };
+		B247861320B680C2004F6C9E /* Legend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Legend.m; sourceTree = "<group>"; };
+		B247861520B68108004F6C9E /* XLegendRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLegendRenderer.h; sourceTree = "<group>"; };
+		B247861620B68108004F6C9E /* XLegendRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLegendRenderer.m; sourceTree = "<group>"; };
+		B247861920B68122004F6C9E /* YLegendRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLegendRenderer.h; sourceTree = "<group>"; };
+		B247861A20B68122004F6C9E /* YLegendRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLegendRenderer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +175,7 @@
 		B20A6E9A20B5CABB00D07992 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B229155720B5FD31001D8638 /* Views */,
 				B229155220B5FBFE001D8638 /* Extensions */,
 				B229154520B5FA81001D8638 /* Models */,
 				B20A6E9F20B5CFF900D07992 /* Helpers */,
@@ -269,6 +314,171 @@
 			path = "UIBezierPath+Points";
 			sourceTree = "<group>";
 		};
+		B229155720B5FD31001D8638 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B229155820B5FD39001D8638 /* GraphView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B229155820B5FD39001D8638 /* GraphView */ = {
+			isa = PBXGroup;
+			children = (
+				B229155D20B5FF89001D8638 /* Components */,
+				B229155920B5FD56001D8638 /* GraphViewDataSource.h */,
+				B229155A20B5FD90001D8638 /* GraphView.h */,
+				B229155B20B5FD90001D8638 /* GraphView.m */,
+			);
+			path = GraphView;
+			sourceTree = "<group>";
+		};
+		B229155D20B5FF89001D8638 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B247861120B680B4004F6C9E /* Legend */,
+				B229156320B60056001D8638 /* Axis */,
+				B229156220B60050001D8638 /* Grid */,
+				B247860C20B68036004F6C9E /* Line */,
+				B24785F420B67905004F6C9E /* GraphViewPort */,
+				B24785F520B6796E004F6C9E /* GraphComponentsRenderer.h */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B229156220B60050001D8638 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				B229156720B6025A001D8638 /* Grid.h */,
+				B229156820B6025A001D8638 /* Grid.m */,
+				B229156D20B602C0001D8638 /* Renderer */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		B229156320B60056001D8638 /* Axis */ = {
+			isa = PBXGroup;
+			children = (
+				B24785FA20B67AE3004F6C9E /* Axis Base */,
+				B24785F320B678A4004F6C9E /* YAxis */,
+				B24785F220B6789C004F6C9E /* XAxis */,
+			);
+			path = Axis;
+			sourceTree = "<group>";
+		};
+		B229156D20B602C0001D8638 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				B229156A20B602BA001D8638 /* GridRenderer.h */,
+				B229156B20B602BA001D8638 /* GridRenderer.m */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		B24785F220B6789C004F6C9E /* XAxis */ = {
+			isa = PBXGroup;
+			children = (
+				B24785FE20B67C6F004F6C9E /* XAxis.h */,
+				B24785FF20B67C6F004F6C9E /* XAxis.m */,
+				B247860820B67F54004F6C9E /* Renderer */,
+			);
+			path = XAxis;
+			sourceTree = "<group>";
+		};
+		B24785F320B678A4004F6C9E /* YAxis */ = {
+			isa = PBXGroup;
+			children = (
+				B24785FB20B67BB0004F6C9E /* YAxis.h */,
+				B24785FC20B67BB0004F6C9E /* YAxis.m */,
+				B247860420B67E85004F6C9E /* Renderer */,
+			);
+			path = YAxis;
+			sourceTree = "<group>";
+		};
+		B24785F420B67905004F6C9E /* GraphViewPort */ = {
+			isa = PBXGroup;
+			children = (
+				B24785EF20B6784F004F6C9E /* GraphViewPort.h */,
+				B24785F020B6784F004F6C9E /* GraphViewPort.m */,
+			);
+			path = GraphViewPort;
+			sourceTree = "<group>";
+		};
+		B24785FA20B67AE3004F6C9E /* Axis Base */ = {
+			isa = PBXGroup;
+			children = (
+				B24785F720B67ADA004F6C9E /* AxisBase.h */,
+				B24785F820B67ADA004F6C9E /* AxisBase.m */,
+			);
+			path = "Axis Base";
+			sourceTree = "<group>";
+		};
+		B247860420B67E85004F6C9E /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				B247860120B67E81004F6C9E /* YAxisRenderer.h */,
+				B247860220B67E81004F6C9E /* YAxisRenderer.m */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		B247860820B67F54004F6C9E /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				B247860520B67F51004F6C9E /* XAxisRenderer.h */,
+				B247860620B67F51004F6C9E /* XAxisRenderer.m */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		B247860C20B68036004F6C9E /* Line */ = {
+			isa = PBXGroup;
+			children = (
+				B247860920B68006004F6C9E /* Line.h */,
+				B247860A20B68006004F6C9E /* Line.m */,
+				B247861020B68058004F6C9E /* Renderer */,
+			);
+			path = Line;
+			sourceTree = "<group>";
+		};
+		B247861020B68058004F6C9E /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				B247860D20B68055004F6C9E /* LineRenderer.h */,
+				B247860E20B68055004F6C9E /* LineRenderer.m */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		B247861120B680B4004F6C9E /* Legend */ = {
+			isa = PBXGroup;
+			children = (
+				B247861220B680C2004F6C9E /* Legend.h */,
+				B247861320B680C2004F6C9E /* Legend.m */,
+				B247861820B6810C004F6C9E /* XLegendRenderer */,
+				B247861C20B68128004F6C9E /* YLegendRenderer */,
+			);
+			path = Legend;
+			sourceTree = "<group>";
+		};
+		B247861820B6810C004F6C9E /* XLegendRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				B247861520B68108004F6C9E /* XLegendRenderer.h */,
+				B247861620B68108004F6C9E /* XLegendRenderer.m */,
+			);
+			path = XLegendRenderer;
+			sourceTree = "<group>";
+		};
+		B247861C20B68128004F6C9E /* YLegendRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				B247861920B68122004F6C9E /* YLegendRenderer.h */,
+				B247861A20B68122004F6C9E /* YLegendRenderer.m */,
+			);
+			path = YLegendRenderer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,15 +579,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B247860320B67E81004F6C9E /* YAxisRenderer.m in Sources */,
 				B229155020B5FB56001D8638 /* GMInterval.m in Sources */,
+				B229155C20B5FD90001D8638 /* GraphView.m in Sources */,
 				B20A6EA220B5D01600D07992 /* Validator.m in Sources */,
+				B24785FD20B67BB0004F6C9E /* YAxis.m in Sources */,
+				B247860B20B68006004F6C9E /* Line.m in Sources */,
+				B24785F920B67ADA004F6C9E /* AxisBase.m in Sources */,
 				B229155520B5FC3A001D8638 /* UIBezierPath+GMPoints.m in Sources */,
 				B20A6E7A20B5C53600D07992 /* ViewController.m in Sources */,
+				B247861420B680C2004F6C9E /* Legend.m in Sources */,
 				B229154920B5FAB8001D8638 /* GMPoint.m in Sources */,
+				B229156920B6025A001D8638 /* Grid.m in Sources */,
+				B247860720B67F51004F6C9E /* XAxisRenderer.m in Sources */,
 				B20A6E8520B5C54000D07992 /* main.m in Sources */,
+				B247861720B68108004F6C9E /* XLegendRenderer.m in Sources */,
 				B20A6E7720B5C53600D07992 /* AppDelegate.m in Sources */,
+				B229156C20B602BA001D8638 /* GridRenderer.m in Sources */,
+				B24785F120B6784F004F6C9E /* GraphViewPort.m in Sources */,
+				B247860F20B68055004F6C9E /* LineRenderer.m in Sources */,
+				B247861B20B68122004F6C9E /* YLegendRenderer.m in Sources */,
 				B229154C20B5FB13001D8638 /* Graph.m in Sources */,
 				B20A6EA920B5D10C00D07992 /* FunctionValidationRule.mm in Sources */,
+				B247860020B67C6F004F6C9E /* XAxis.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
