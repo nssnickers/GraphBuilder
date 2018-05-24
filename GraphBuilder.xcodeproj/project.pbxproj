@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		363D206076BA21AD86BB2343 /* libPods-GraphBuilderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABBEE2098BA6ACE6379EC98E /* libPods-GraphBuilderTests.a */; };
 		B20A6E7720B5C53600D07992 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6E7620B5C53600D07992 /* AppDelegate.m */; };
 		B20A6E7A20B5C53600D07992 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6E7920B5C53600D07992 /* ViewController.m */; };
 		B20A6E7D20B5C53600D07992 /* Graph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20A6E7B20B5C53600D07992 /* Graph.storyboard */; };
 		B20A6E7F20B5C54000D07992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20A6E7E20B5C54000D07992 /* Assets.xcassets */; };
 		B20A6E8220B5C54000D07992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20A6E8020B5C54000D07992 /* LaunchScreen.storyboard */; };
 		B20A6E8520B5C54000D07992 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6E8420B5C54000D07992 /* main.m */; };
-		B20A6E8F20B5C54000D07992 /* GraphBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6E8E20B5C54000D07992 /* GraphBuilderTests.m */; };
 		B20A6EA220B5D01600D07992 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EA120B5D01600D07992 /* Validator.m */; };
 		B20A6EA920B5D10C00D07992 /* FunctionValidationRule.mm in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EA820B5D10C00D07992 /* FunctionValidationRule.mm */; };
 		B20A6EB020B5D67300D07992 /* FunctionValidatorRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EAF20B5D67300D07992 /* FunctionValidatorRuleTests.m */; };
 		B20A6EB220B5D96C00D07992 /* ValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EB120B5D96C00D07992 /* ValidatorTests.m */; };
+		B20F3EEC20B6BEAF00C3D486 /* GraphInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F3EEB20B6BEAF00C3D486 /* GraphInteractorTests.m */; };
 		B229154920B5FAB8001D8638 /* GMPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154820B5FAB8001D8638 /* GMPoint.m */; };
 		B229154C20B5FB13001D8638 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154B20B5FB13001D8638 /* Graph.m */; };
 		B229155020B5FB56001D8638 /* GMInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154F20B5FB56001D8638 /* GMInterval.m */; };
@@ -55,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ABBEE2098BA6ACE6379EC98E /* libPods-GraphBuilderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GraphBuilderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE5FDD75B928D85FDD72E68 /* Pods-GraphBuilderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphBuilderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GraphBuilderTests/Pods-GraphBuilderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B20A6E7220B5C53600D07992 /* GraphBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20A6E7520B5C53600D07992 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B20A6E7620B5C53600D07992 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,7 +69,6 @@
 		B20A6E8320B5C54000D07992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B20A6E8420B5C54000D07992 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B20A6E8A20B5C54000D07992 /* GraphBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B20A6E8E20B5C54000D07992 /* GraphBuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphBuilderTests.m; sourceTree = "<group>"; };
 		B20A6E9020B5C54000D07992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B20A6EA020B5D01600D07992 /* Validator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Validator.h; sourceTree = "<group>"; };
 		B20A6EA120B5D01600D07992 /* Validator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Validator.m; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 		B20A6EA820B5D10C00D07992 /* FunctionValidationRule.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FunctionValidationRule.mm; sourceTree = "<group>"; };
 		B20A6EAF20B5D67300D07992 /* FunctionValidatorRuleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionValidatorRuleTests.m; sourceTree = "<group>"; };
 		B20A6EB120B5D96C00D07992 /* ValidatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidatorTests.m; sourceTree = "<group>"; };
+		B20F3EEB20B6BEAF00C3D486 /* GraphInteractorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphInteractorTests.m; sourceTree = "<group>"; };
 		B229154720B5FAB8001D8638 /* GMPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMPoint.h; sourceTree = "<group>"; };
 		B229154820B5FAB8001D8638 /* GMPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMPoint.m; sourceTree = "<group>"; };
 		B229154A20B5FB13001D8638 /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 		B247863820B69650004F6C9E /* GraphData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphData.m; sourceTree = "<group>"; };
 		B247863A20B69695004F6C9E /* GraphViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphViewController.h; sourceTree = "<group>"; };
 		B247863B20B69695004F6C9E /* GraphViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphViewController.m; sourceTree = "<group>"; };
+		C71EAC2F34EC0608DF83787B /* Pods-GraphBuilderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphBuilderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GraphBuilderTests/Pods-GraphBuilderTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,18 +146,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				363D206076BA21AD86BB2343 /* libPods-GraphBuilderTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FDB23A5FE4814E0DDA531A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABBEE2098BA6ACE6379EC98E /* libPods-GraphBuilderTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A71051007BBD84B6DD42332B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADE5FDD75B928D85FDD72E68 /* Pods-GraphBuilderTests.debug.xcconfig */,
+				C71EAC2F34EC0608DF83787B /* Pods-GraphBuilderTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B20A6E6920B5C53600D07992 = {
 			isa = PBXGroup;
 			children = (
 				B20A6E7420B5C53600D07992 /* GraphBuilder */,
 				B20A6E8D20B5C54000D07992 /* GraphBuilderTests */,
 				B20A6E7320B5C53600D07992 /* Products */,
+				A71051007BBD84B6DD42332B /* Pods */,
+				5FDB23A5FE4814E0DDA531A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,8 +209,8 @@
 		B20A6E8D20B5C54000D07992 /* GraphBuilderTests */ = {
 			isa = PBXGroup;
 			children = (
+				B20F3EE820B6BE4800C3D486 /* UserStories */,
 				B20A6EAC20B5D63A00D07992 /* Common */,
-				B20A6E8E20B5C54000D07992 /* GraphBuilderTests.m */,
 				B20A6E9020B5C54000D07992 /* Info.plist */,
 			);
 			path = GraphBuilderTests;
@@ -280,6 +304,30 @@
 				B20A6EB120B5D96C00D07992 /* ValidatorTests.m */,
 			);
 			path = Validator;
+			sourceTree = "<group>";
+		};
+		B20F3EE820B6BE4800C3D486 /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				B20F3EE920B6BE5800C3D486 /* GraphBuilderUserStory */,
+			);
+			path = UserStories;
+			sourceTree = "<group>";
+		};
+		B20F3EE920B6BE5800C3D486 /* GraphBuilderUserStory */ = {
+			isa = PBXGroup;
+			children = (
+				B20F3EEA20B6BE6C00C3D486 /* GraphBuilderModule */,
+			);
+			path = GraphBuilderUserStory;
+			sourceTree = "<group>";
+		};
+		B20F3EEA20B6BE6C00C3D486 /* GraphBuilderModule */ = {
+			isa = PBXGroup;
+			children = (
+				B20F3EEB20B6BEAF00C3D486 /* GraphInteractorTests.m */,
+			);
+			path = GraphBuilderModule;
 			sourceTree = "<group>";
 		};
 		B229154520B5FA81001D8638 /* Models */ = {
@@ -627,6 +675,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B20A6E9620B5C54000D07992 /* Build configuration list for PBXNativeTarget "GraphBuilderTests" */;
 			buildPhases = (
+				F822815C9A0C82E9393EC311 /* [CP] Check Pods Manifest.lock */,
 				B20A6E8620B5C54000D07992 /* Sources */,
 				B20A6E8720B5C54000D07992 /* Frameworks */,
 				B20A6E8820B5C54000D07992 /* Resources */,
@@ -698,6 +747,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F822815C9A0C82E9393EC311 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GraphBuilderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B20A6E6E20B5C53600D07992 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -739,9 +809,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B247862020B68D80004F6C9E /* TestGraph.m in Sources */,
+				B20F3EEC20B6BEAF00C3D486 /* GraphInteractorTests.m in Sources */,
 				B20A6EB020B5D67300D07992 /* FunctionValidatorRuleTests.m in Sources */,
 				B20A6EB220B5D96C00D07992 /* ValidatorTests.m in Sources */,
-				B20A6E8F20B5C54000D07992 /* GraphBuilderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -921,6 +991,7 @@
 		};
 		B20A6E9720B5C54000D07992 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE5FDD75B928D85FDD72E68 /* Pods-GraphBuilderTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -940,6 +1011,7 @@
 		};
 		B20A6E9820B5C54000D07992 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C71EAC2F34EC0608DF83787B /* Pods-GraphBuilderTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
