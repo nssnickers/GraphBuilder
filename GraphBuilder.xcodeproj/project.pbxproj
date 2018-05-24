@@ -19,6 +19,7 @@
 		B20A6EB220B5D96C00D07992 /* ValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EB120B5D96C00D07992 /* ValidatorTests.m */; };
 		B20F3EEC20B6BEAF00C3D486 /* GraphInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F3EEB20B6BEAF00C3D486 /* GraphInteractorTests.m */; };
 		B20F3EEE20B6C55100C3D486 /* GraphPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F3EED20B6C55100C3D486 /* GraphPresenterTests.m */; };
+		B20F3EF020B6DB5800C3D486 /* GraphViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F3EEF20B6DB5800C3D486 /* GraphViewControllerTests.m */; };
 		B229154920B5FAB8001D8638 /* GMPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154820B5FAB8001D8638 /* GMPoint.m */; };
 		B229154C20B5FB13001D8638 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154B20B5FB13001D8638 /* Graph.m */; };
 		B229155020B5FB56001D8638 /* GMInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154F20B5FB56001D8638 /* GMInterval.m */; };
@@ -77,6 +78,8 @@
 		B20A6EB120B5D96C00D07992 /* ValidatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidatorTests.m; sourceTree = "<group>"; };
 		B20F3EEB20B6BEAF00C3D486 /* GraphInteractorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphInteractorTests.m; sourceTree = "<group>"; };
 		B20F3EED20B6C55100C3D486 /* GraphPresenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphPresenterTests.m; sourceTree = "<group>"; };
+		B20F3EEF20B6DB5800C3D486 /* GraphViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphViewControllerTests.m; sourceTree = "<group>"; };
+		B20F3EF120B6E12300C3D486 /* GraphViewController+testable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GraphViewController+testable.h"; sourceTree = "<group>"; };
 		B229154720B5FAB8001D8638 /* GMPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMPoint.h; sourceTree = "<group>"; };
 		B229154820B5FAB8001D8638 /* GMPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMPoint.m; sourceTree = "<group>"; };
 		B229154A20B5FB13001D8638 /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
@@ -324,6 +327,8 @@
 			children = (
 				B20F3EEB20B6BEAF00C3D486 /* GraphInteractorTests.m */,
 				B20F3EED20B6C55100C3D486 /* GraphPresenterTests.m */,
+				B20F3EEF20B6DB5800C3D486 /* GraphViewControllerTests.m */,
+				B20F3EF120B6E12300C3D486 /* GraphViewController+testable.h */,
 			);
 			path = GraphBuilderModule;
 			sourceTree = "<group>";
@@ -806,6 +811,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B247862020B68D80004F6C9E /* TestGraph.m in Sources */,
+				B20F3EF020B6DB5800C3D486 /* GraphViewControllerTests.m in Sources */,
 				B20F3EEC20B6BEAF00C3D486 /* GraphInteractorTests.m in Sources */,
 				B20A6EB020B5D67300D07992 /* FunctionValidatorRuleTests.m in Sources */,
 				B20F3EEE20B6C55100C3D486 /* GraphPresenterTests.m in Sources */,
