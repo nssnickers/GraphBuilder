@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol GraphViewProtocol, GraphInteractorProtocol;
+@protocol GraphViewProtocol, GraphInteractorProtocol, GraphViewDataSource;
 
 @protocol GraphPresenterProtocol <NSObject>
 

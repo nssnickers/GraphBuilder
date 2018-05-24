@@ -11,7 +11,7 @@
 typedef void (^successValidationBlock)(void);
 typedef void (^failureValidationBlock)(NSString *title, NSString *message);
 
-@protocol GraphPresenterProtocol;
+@protocol GraphPresenterProtocol, GraphViewDataSource;
 
 @protocol GraphInteractorProtocol <NSObject>
 

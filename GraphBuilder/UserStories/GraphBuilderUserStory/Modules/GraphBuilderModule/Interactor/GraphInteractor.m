@@ -46,11 +46,13 @@
     [validator validateString:function
                      withRule:functionValidationRule
          validationSuccessful:^{
+             
              if (success) {
                  success();
              }
          }
             validationFailure:^(NSString *error) {
+                
                 if (failure) {
                     failure(@"", error);
                 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		363D206076BA21AD86BB2343 /* libPods-GraphBuilderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABBEE2098BA6ACE6379EC98E /* libPods-GraphBuilderTests.a */; };
 		B20A6E7720B5C53600D07992 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6E7620B5C53600D07992 /* AppDelegate.m */; };
-		B20A6E7A20B5C53600D07992 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6E7920B5C53600D07992 /* ViewController.m */; };
 		B20A6E7D20B5C53600D07992 /* Graph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20A6E7B20B5C53600D07992 /* Graph.storyboard */; };
 		B20A6E7F20B5C54000D07992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20A6E7E20B5C54000D07992 /* Assets.xcassets */; };
 		B20A6E8220B5C54000D07992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20A6E8020B5C54000D07992 /* LaunchScreen.storyboard */; };
@@ -19,6 +18,7 @@
 		B20A6EB020B5D67300D07992 /* FunctionValidatorRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EAF20B5D67300D07992 /* FunctionValidatorRuleTests.m */; };
 		B20A6EB220B5D96C00D07992 /* ValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A6EB120B5D96C00D07992 /* ValidatorTests.m */; };
 		B20F3EEC20B6BEAF00C3D486 /* GraphInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F3EEB20B6BEAF00C3D486 /* GraphInteractorTests.m */; };
+		B20F3EEE20B6C55100C3D486 /* GraphPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F3EED20B6C55100C3D486 /* GraphPresenterTests.m */; };
 		B229154920B5FAB8001D8638 /* GMPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154820B5FAB8001D8638 /* GMPoint.m */; };
 		B229154C20B5FB13001D8638 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154B20B5FB13001D8638 /* Graph.m */; };
 		B229155020B5FB56001D8638 /* GMInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = B229154F20B5FB56001D8638 /* GMInterval.m */; };
@@ -61,8 +61,6 @@
 		B20A6E7220B5C53600D07992 /* GraphBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20A6E7520B5C53600D07992 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B20A6E7620B5C53600D07992 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B20A6E7820B5C53600D07992 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B20A6E7920B5C53600D07992 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B20A6E7C20B5C53600D07992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Graph.storyboard; sourceTree = "<group>"; };
 		B20A6E7E20B5C54000D07992 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B20A6E8120B5C54000D07992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +76,7 @@
 		B20A6EAF20B5D67300D07992 /* FunctionValidatorRuleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionValidatorRuleTests.m; sourceTree = "<group>"; };
 		B20A6EB120B5D96C00D07992 /* ValidatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidatorTests.m; sourceTree = "<group>"; };
 		B20F3EEB20B6BEAF00C3D486 /* GraphInteractorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphInteractorTests.m; sourceTree = "<group>"; };
+		B20F3EED20B6C55100C3D486 /* GraphPresenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphPresenterTests.m; sourceTree = "<group>"; };
 		B229154720B5FAB8001D8638 /* GMPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMPoint.h; sourceTree = "<group>"; };
 		B229154820B5FAB8001D8638 /* GMPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMPoint.m; sourceTree = "<group>"; };
 		B229154A20B5FB13001D8638 /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
@@ -196,8 +195,6 @@
 				B20A6E9B20B5CAC500D07992 /* UserStories */,
 				B20A6E9A20B5CABB00D07992 /* Common */,
 				B20A6E9C20B5CAE200D07992 /* App Delegate */,
-				B20A6E7820B5C53600D07992 /* ViewController.h */,
-				B20A6E7920B5C53600D07992 /* ViewController.m */,
 				B20A6E7E20B5C54000D07992 /* Assets.xcassets */,
 				B20A6E8020B5C54000D07992 /* LaunchScreen.storyboard */,
 				B20A6E8420B5C54000D07992 /* main.m */,
@@ -326,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				B20F3EEB20B6BEAF00C3D486 /* GraphInteractorTests.m */,
+				B20F3EED20B6C55100C3D486 /* GraphPresenterTests.m */,
 			);
 			path = GraphBuilderModule;
 			sourceTree = "<group>";
@@ -782,7 +780,6 @@
 				B247860B20B68006004F6C9E /* Line.m in Sources */,
 				B24785F920B67ADA004F6C9E /* AxisBase.m in Sources */,
 				B229155520B5FC3A001D8638 /* UIBezierPath+GMPoints.m in Sources */,
-				B20A6E7A20B5C53600D07992 /* ViewController.m in Sources */,
 				B247861420B680C2004F6C9E /* Legend.m in Sources */,
 				B229154920B5FAB8001D8638 /* GMPoint.m in Sources */,
 				B229156920B6025A001D8638 /* Grid.m in Sources */,
@@ -811,6 +808,7 @@
 				B247862020B68D80004F6C9E /* TestGraph.m in Sources */,
 				B20F3EEC20B6BEAF00C3D486 /* GraphInteractorTests.m in Sources */,
 				B20A6EB020B5D67300D07992 /* FunctionValidatorRuleTests.m in Sources */,
+				B20F3EEE20B6C55100C3D486 /* GraphPresenterTests.m in Sources */,
 				B20A6EB220B5D96C00D07992 /* ValidatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

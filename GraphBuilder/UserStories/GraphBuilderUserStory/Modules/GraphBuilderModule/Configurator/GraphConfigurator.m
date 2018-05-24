@@ -9,12 +9,14 @@
 #import "GraphConfigurator.h"
 #import "GraphInteractor.h"
 #import "GraphPresenter.h"
+#import "GraphData.h"
 #import "GraphViewController.h"
 
 @implementation GraphConfigurator
 
 - (void)configureView:(GraphViewController *)view {
     GraphPresenter *presenter = [[GraphPresenter alloc] initWithView:view];
+    presenter.graphData = [[GraphData alloc] init];
     GraphInteractor *interactor = [[GraphInteractor alloc] initWithPresenter:presenter];
     
     view.presenter = presenter;
