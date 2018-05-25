@@ -15,12 +15,16 @@
 @implementation GraphConfigurator
 
 - (void)configureView:(GraphViewController *)view {
-    GraphPresenter *presenter = [[GraphPresenter alloc] initWithView:view];
+    GraphPresenter *presenter = [GraphPresenter new];
     presenter.graphData = [[GraphData alloc] init];
-    GraphInteractor *interactor = [[GraphInteractor alloc] initWithPresenter:presenter];
+    
+    GraphInteractor *interactor = [GraphInteractor new];
+    interactor.presenter = presenter;
     
     view.presenter = presenter;
+    
     presenter.interactor = interactor;
+    presenter.view = view;
 }
 
 @end

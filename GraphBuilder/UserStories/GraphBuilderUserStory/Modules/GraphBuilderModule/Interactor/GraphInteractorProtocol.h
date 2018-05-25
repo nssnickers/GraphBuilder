@@ -15,8 +15,6 @@ typedef void (^failureValidationBlock)(NSString *title, NSString *message);
 
 @protocol GraphInteractorProtocol <NSObject>
 
-- (id<GraphInteractorProtocol>)initWithPresenter:(id<GraphPresenterProtocol>)presenter;
-
 - (void)validateFunction:(NSString *)function success:(successValidationBlock)success failure:(failureValidationBlock)failure;
 
 @end

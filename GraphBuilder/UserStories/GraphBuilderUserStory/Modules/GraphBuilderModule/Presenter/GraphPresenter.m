@@ -16,16 +16,6 @@
 
 #pragma mark - GraphPresenterProtocol
 
-- (id<GraphPresenterProtocol>)initWithView:(id<GraphViewProtocol>)view {
-    self = [super init];
-    
-    if (self) {
-        _view = view;
-    }
-    
-    return self;
-}
-
 - (void)configureView {
     [self.view setGraphViewDataSource:self.graphData];
 }

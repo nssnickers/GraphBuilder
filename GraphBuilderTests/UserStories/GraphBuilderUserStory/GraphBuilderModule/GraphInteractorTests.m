@@ -25,7 +25,8 @@
     [super setUp];
     
     self.mockPresenter = OCMProtocolMock(@protocol(GraphPresenterProtocol));
-    self.interactor = [[GraphInteractor alloc] initWithPresenter:self.mockPresenter];
+    self.interactor = [GraphInteractor new];
+    self.interactor.presenter = self.mockPresenter;
 }
 
 - (void)tearDown {

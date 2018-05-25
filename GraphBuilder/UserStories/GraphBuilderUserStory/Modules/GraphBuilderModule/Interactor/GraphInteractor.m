@@ -30,15 +30,6 @@
 
 #pragma mark - GraphInteractorProtocol
 
-- (id)initWithPresenter:(id<GraphPresenterProtocol>)presenter {
-    self = [super init];
-    if (self) {
-        _presenter = presenter;
-    }
-    
-    return self;
-}
-
 - (void)validateFunction:(NSString *)function success:(successValidationBlock)success failure:(failureValidationBlock)failure {
     FunctionValidationRule *functionValidationRule = [[FunctionValidationRule alloc] initWithErrorMessage:self.functionValidationErrorMessage];
     Validator *validator = [Validator new];
