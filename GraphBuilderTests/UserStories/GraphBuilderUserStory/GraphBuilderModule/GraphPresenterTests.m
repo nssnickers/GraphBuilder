@@ -28,10 +28,14 @@
     [super setUp];
     
     self.mockView = OCMProtocolMock(@protocol(GraphViewProtocol));
-    self.presenter = [[GraphPresenter alloc] initWithView:self.mockView];
+    
+    self.presenter = [GraphPresenter new];
+    self.presenter.view = self.mockView;
     self.graphData = [[GraphData alloc] init];
     self.presenter.graphData = self.graphData;
-    self.interactor = [[GraphInteractor alloc] initWithPresenter:self.presenter];
+    
+    self.interactor = [GraphInteractor new];
+    self.interactor.presenter = self.presenter;
     
     self.presenter.view = self.mockView;
     self.presenter.interactor = self.interactor;

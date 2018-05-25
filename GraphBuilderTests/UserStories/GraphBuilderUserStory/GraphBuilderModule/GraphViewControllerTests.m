@@ -24,10 +24,9 @@
 - (void)setUp {
     [super setUp];
     
-    self.view = [[GraphViewController alloc] init];
+    self.view = [GraphViewController new];
     self.presenterMock = OCMProtocolMock(@protocol(GraphPresenterProtocol));
     self.view.presenter = self.presenterMock;
-    
 }
 
 - (void)tearDown {

@@ -12,8 +12,6 @@
 
 @protocol GraphPresenterProtocol <NSObject>
 
-- (id<GraphPresenterProtocol>)initWithView:(id<GraphViewProtocol>)view;
-
 - (void)configureView;
 - (void)buildButtonClicked;
 
